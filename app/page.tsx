@@ -1,4 +1,5 @@
 import Card from "@/components/home/card";
+import TestComponent from "@/components/home/test-component";
 import { DEPLOY_URL } from "@/lib/constants";
 import { Github, Twitter } from "@/components/shared/icons";
 import WebVitals from "@/components/home/web-vitals";
@@ -107,6 +108,7 @@ export default async function Home() {
           />
         ))}
       </div>
+      <TestComponent />
     </>
   );
 }
