@@ -1,0 +1,32 @@
+.card {
+	@apply relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md;
+}
+
+.cardLarge {
+	composes: card;
+	@apply md:col-span-2;
+}
+
+.demo {
+	@apply flex h-60 items-center justify-center;
+}
+
+.wrapper {
+	@apply mx-auto max-w-md text-center;
+}
+
+.title {
+	@apply bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal;
+}
+
+.content {
+	@apply prose-sm mt-3 leading-normal text-gray-500 [text-wrap:balance] md:prose;
+}
+
+.link {
+	@apply font-medium text-gray-800 underline transition-colors;
+}
+
+.code {
+	@apply rounded-sm bg-gray-100 px-1 py-0.5 font-mono font-medium text-gray-800;
+}
